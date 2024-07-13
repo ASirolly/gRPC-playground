@@ -75,10 +75,10 @@ func getHostName() string {
 
 func main() {
 	logger := slog.New(slog.NewJSONHandler(os.Stdout, nil))
+
 	loggedHandler := &basicHandler{
 		logger,
 	}
-
 	loggedBadHandler := &badHandler{
 		logger,
 	}
