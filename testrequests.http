@@ -1,22 +1,31 @@
-GET http://localhost:8090/hello
+GET http://localhost:8080/health
 Accept: application/json
 
 ###
-GET http://localhost:8090/hello/
+POST http://localhost:8080/health
 Accept: application/json
 
 ###
-GET http://localhost:8090/headers
+
+GET http://localhost:8080/hello
 Accept: application/json
 
 ###
-GET http://localhost:8090/headers/
+GET http://localhost:8080/hello/
 Accept: application/json
 
 ###
-GET http://localhost:8090/hello/adsfhajsfhljasdfhljk
+GET http://localhost:8080/headers
 Accept: application/json
 
 ###
-GET http://localhost:8090/badEndpoint/
+GET http://localhost:8080/headers/
+Accept: application/json
+
+###
+GET http://localhost:8080/hello/
+Accept: application/json
+
+###
+GET http://localhost:8080/badEndpoint/
 Accept: application/json
