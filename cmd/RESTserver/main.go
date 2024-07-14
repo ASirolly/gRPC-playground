@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"github.com/asirolly/grpctest/internal/handler"
-	"github.com/asirolly/grpctest/internal/middleware"
+	"github.com/asirolly/grpctest/internal/src/handler"
+	"github.com/asirolly/grpctest/internal/src/middleware"
 	"log"
 	"log/slog"
 	"net/http"
