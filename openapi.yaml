@@ -1,0 +1,34 @@
+openapi: 3.1.0
+info:
+  title: go-REST
+  summary: Experimental go API
+  description: Rest API for my experimental go endpoints
+  contact:
+    name: Andrew Sirolly
+    url: https://www.asirolly.com
+    email: asirolly3@gmail.com
+  license:
+    name: MIT License
+    url: https://raw.githubusercontent.com/ASirolly/go-REST/refs/heads/main/LICENSE
+  version: 0.0.1
+servers:
+  - url: https://dev.asirolly.com
+    description: Development Server
+paths:
+  /headers:
+    get:
+      responses:
+        '200':
+          description: headers used by request
+  /health:
+    get:
+      responses:
+        '200':
+          description: healthy
+  /hello:
+    get:
+      responses:
+        '200':
+          description: hello world
+
+  
