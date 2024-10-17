@@ -1,0 +1,7 @@
+services:
+  main:
+    image:
+    environment:
+    ports:
+    restart:
+    stop_grace_period:
