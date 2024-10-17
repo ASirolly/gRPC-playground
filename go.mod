@@ -1,3 +1,3 @@
-module github.com/asirolly/grpctest
+module github.com/asirolly/go-rest
 
 go 1.22.5
