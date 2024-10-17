@@ -32,11 +32,11 @@ func main() {
 	mux.Handle("GET /hello/{$}", helloHandler)
 	mux.Handle("GET /headers/{$}", headersHandler)
 
-	log.Printf("listening on port %s...", port)
+	logger.Info("Starting server...", slog.String("port", port))
 	log.Fatal(
 		http.ListenAndServe(
 			fmt.Sprintf(":%s", port),
-			middleware.Logging(mux, logger),
+			middleware.Wrap(mux, logger),
 		),
 	)
 }
